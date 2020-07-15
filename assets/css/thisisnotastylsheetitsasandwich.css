@@ -45,6 +45,7 @@ p {
 header {
 	background-color: #9259e5;
 	padding: 20px;
+	overflow: auto;
 }
 
 header .patreon {
@@ -80,8 +81,9 @@ header .patreon {
 	margin-top: 10px;
 }
 
-#stuffs:nth-child(3n+0) {
+#stuffs .stuff:nth-child(3n+1) {
 	margin-left: 0;
+	clear: both;
 }
 
 #stuffs .stuff:nth-child(n+1):nth-child(-n+3) img {
@@ -98,4 +100,135 @@ header .patreon {
 
 #stuffs .stuff:nth-child(n+10):nth-child(-n+12) img {
 	height: 271px;
+}
+
+
+
+
+
+/* ----------------------------------- Responsive */
+
+@media screen and (max-width: 999px) {
+
+	#wrapper {
+		width: 97%;
+		margin: 0 auto;
+	}
+
+	/*#stuffs {
+		width: 690px;
+		margin-left: auto;
+		margin-right: auto;
+	}*/
+
+	#stuffs .stuff:nth-child(n+1):nth-child(-n+3) img {
+		height: 180px;
+	}
+
+	#stuffs .stuff:nth-child(n+4):nth-child(-n+6) img {
+		height: 249px;
+	}
+
+	#stuffs .stuff:nth-child(n+7):nth-child(-n+9) img {
+		height: 169px;
+	}
+
+	#stuffs .stuff:nth-child(n+10):nth-child(-n+12) img {
+		height: 220px;
+	}
+}
+
+@media screen and (max-width: 840px) {
+
+	.homepage .top_banner img {
+		width: 95%;
+	}
+}
+
+
+@media screen and (max-width: 830px) {
+
+	#stuffs .stuff:nth-child(n+1):nth-child(-n+3) img {
+		height: 152px;
+	}
+
+	#stuffs .stuff:nth-child(n+4):nth-child(-n+6) img {
+		height: 210px;
+	}
+
+	#stuffs .stuff:nth-child(n+7):nth-child(-n+9) img {
+		height: 142px;
+	}
+
+	#stuffs .stuff:nth-child(n+10):nth-child(-n+12) img {
+		height: 185px;
+	}
+}
+
+
+@media screen and (max-width: 700px) {
+
+	#stuffs .stuff:nth-child(3n+1) {
+		clear: none;
+		margin-left: 10px;
+	}
+
+	#stuffs .stuff:nth-child(2n+1) {
+		clear: both;
+	}
+
+	#stuffs .stuff:nth-child(n+1):nth-child(-n+2) img {
+		height: 190px;
+	}
+
+	#stuffs .stuff:nth-child(n+3):nth-child(-n+4) img {
+		height: 221px;
+	}
+
+	#stuffs .stuff:nth-child(n+5):nth-child(-n+6) img {
+		height: 260px;
+	}
+
+	#stuffs .stuff:nth-child(n+7):nth-child(-n+8) img {
+		height: 170px;
+	}
+
+	#stuffs .stuff:nth-child(n+9):nth-child(-n+10) img {
+		height: 198px;
+	}
+
+	#stuffs .stuff:nth-child(n+11):nth-child(-n+12) img {
+		height: 254px;
+	}
+}
+
+
+@media screen and (max-width: 592px) {
+
+	#stuffs .stuff {
+		clear: both;
+		width: 97%;
+	}
+
+	.homepage #stuffs .stuff:nth-child(1n+1) img {
+		width: 98%;
+		height: auto;
+	}
+}
+
+
+@media screen and (max-width: 440px) {
+
+	header {
+		text-align: center;
+	}
+
+	header img.logo {
+		float: none;
+	}
+
+	header img.patreon {
+		float: none;
+		margin-top: 10px;
+	}
 }

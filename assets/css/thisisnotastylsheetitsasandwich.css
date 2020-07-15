@@ -1,0 +1,101 @@
+html {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	font-size: 20px;
+	color: #1a1a1a;
+}
+
+body {
+	overflow-y: scroll;
+	text-align: left;
+	margin: 0;
+}
+
+a {
+	color: #3b8940;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #285c2b;
+	text-decoration: underline;
+}
+
+h1, h2, h3, h4 {
+	margin-bottom: 0;
+	color: #9259e5;
+}
+
+p {
+	margin-top: 5px;
+}
+
+
+/* ----------------------------------- Generic */
+
+#wrapper {
+	width: 999px;
+	margin: 0 auto;
+}
+
+#wrapper #content {
+	padding-top: 20px;
+}
+
+header {
+	background-color: #9259e5;
+	padding: 20px;
+}
+
+header .patreon {
+	float: right;
+	padding-top: 7px;
+}
+
+
+
+/* ----------------------------------- Homepage */
+
+.homepage p {
+	text-align: center;
+}
+
+.homepage .top_banner {
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+.homepage .top_banner p {
+	margin: 5px 0 0 0;
+	font-size: 14px;
+	color: #3e8433;
+}
+
+.stuff {
+	float: left;
+	margin-left: 10px;
+}
+
+.stuff img {
+	margin-top: 10px;
+}
+
+#stuffs:nth-child(3n+0) {
+	margin-left: 0;
+}
+
+#stuffs .stuff:nth-child(n+1):nth-child(-n+3) img {
+	height: 222px;
+}
+
+#stuffs .stuff:nth-child(n+4):nth-child(-n+6) img {
+	height: 307px;
+}
+
+#stuffs .stuff:nth-child(n+7):nth-child(-n+9) img {
+	height: 208px;
+}
+
+#stuffs .stuff:nth-child(n+10):nth-child(-n+12) img {
+	height: 271px;
+}

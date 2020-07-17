@@ -242,7 +242,7 @@ footer #wrapper p {
 
 .detail aside #contact {
 	text-align: left;
-	margin-left: 27px;
+	margin-left: 20px;
 }
 
 /* ----------------------------------- BawlSec */
@@ -288,11 +288,9 @@ footer #wrapper p {
 		margin: 0 auto;
 	}
 
-	/*#stuffs {
-		width: 690px;
-		margin-left: auto;
-		margin-right: auto;
-	}*/
+	.detail aside #contact {
+		margin-left: 10px;
+	}
 
 	#stuffs .stuff:nth-child(n+1):nth-child(-n+3) img {
 		height: 180px;
@@ -356,6 +354,10 @@ footer #wrapper p {
 
 @media screen and (max-width: 700px) {
 
+	.detail aside #contact {
+		margin-left: 0;
+	}
+
 	#stuffs .stuff:nth-child(3n+1) {
 		clear: none;
 		margin-left: 10px;
@@ -400,6 +402,15 @@ footer #wrapper p {
 
 
 @media screen and (max-width: 650px) {
+
+	h1 {
+		margin-left: 10px;
+	}
+
+	p {
+		margin-left: 10px;
+		margin-right: 10px;
+	}
 
 	.detail content,
 	.detail aside {
